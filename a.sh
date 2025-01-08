@@ -81,7 +81,7 @@ sudo cpulimit -l 80 -- sudo kvm \
     -device virtio-balloon-pci \
     -vga virtio \
     -net nic,netdev=n0,model=virtio-net-pci \
-    -netdev user,id=n0,hostfwd=tcp::3389-:3389 \
+    -netdev user,id=n0,hostfwd=tcp::5900-:5900 \
     -boot c \
     -device virtio-serial-pci \
     -device virtio-rng-pci \
